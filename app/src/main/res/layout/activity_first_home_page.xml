@@ -9,11 +9,9 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include layout="@layout/appbar_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <include layout="@layout/appbar_layout" />
 
-    </include>
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         app:itemIconTint="@color/black"

@@ -105,6 +105,7 @@ public class emi extends AppCompatActivity {
 
     public  float calFinalDvdnt(float Principal, float Rate, float Dvdnt) {
 
+
         return (Principal * Rate * Dvdnt);
 
     }

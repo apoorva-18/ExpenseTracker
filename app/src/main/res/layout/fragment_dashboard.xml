@@ -328,7 +328,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="16dp"
-            android:contentDescription="@string/income"
+            android:contentDescription="@string/add_hint"
             android:backgroundTint="@color/yellow"
             android:src="@drawable/ic_income"
             app:fabSize="normal">

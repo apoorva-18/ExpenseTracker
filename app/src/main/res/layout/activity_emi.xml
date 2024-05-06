@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".inc_emi"
+    android:background="@drawable/background"
     android:layout_height="match_parent">
 
     <androidx.core.widget.NestedScrollView
@@ -29,6 +30,8 @@
                     android:layout_height="wrap_content"
                     android:digits="0123456789."
                     android:hint="@string/principal"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
                     android:inputType="number"
                     android:singleLine="true"
                     tools:ignore="Autofill" />
@@ -46,7 +49,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:digits="0123456789."
+                    android:layout_marginBottom="10dp"
                     android:hint="@string/interest"
+                    android:textColor="@color/black"
                     android:inputType="number"
                     android:singleLine="true"
                     tools:ignore="Autofill" />
@@ -64,7 +69,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:digits="0123456789."
+                    android:layout_marginBottom="10dp"
                     android:hint="@string/years"
+                    android:textColor="@color/black"
                     android:inputType="number"
                     tools:ignore="Autofill" />
 
@@ -77,10 +84,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/form_button_bg"
-                android:backgroundTint="@color/pink"
-                android:text="Calculate"
-                android:textColor="@color/white"
-                tools:ignore="HardcodedText" />
+                android:backgroundTint="@color/purple_500"
+                android:text="@string/calculate"
+                android:textColor="@color/white" />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -94,8 +100,11 @@
                     android:id="@+id/emi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:hint="@string/emi"
+                    android:textColor="@color/black"
                     android:inputType="number"
+
                     android:maxEms="0"
                     tools:ignore="Autofill" />
 
@@ -112,6 +121,8 @@
                     android:id="@+id/interest_total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
                     android:hint="@string/interest_total"
                     android:inputType="number"
                     tools:ignore="Autofill" />

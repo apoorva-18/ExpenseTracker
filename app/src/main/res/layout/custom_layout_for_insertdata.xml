@@ -3,11 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:layout_height="match_parent">
-
-
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,6 +22,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/form_sc_bg"
+                        android:padding="10dp"
                         android:text="@string/amount1"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -44,6 +43,7 @@
                         android:id="@+id/amount_edt"
                         android:inputType="number"
                         android:autofillHints="phone"
+                        android:background="@drawable/search_form_bg"
                         android:hint="@string/amount"
                         android:textColor="@color/black"
                         />
@@ -67,6 +67,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/form_sc_bg"
+                        android:padding="10dp"
                         android:text="@string/type"
                         android:textSize="18sp"
                         android:textColor="@color/black"
@@ -86,6 +88,7 @@
                         android:id="@+id/type_edt"
                         android:inputType="text"
                         android:autofillHints="name"
+                        android:background="@drawable/search_form_bg"
                         android:hint="@string/type1"
                         android:textColor="@color/black"
                         />
@@ -109,6 +112,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/form_sc_bg"
+                        android:padding="10dp"
                         android:text="@string/note1"
                         android:textSize="18sp"
                         android:textColor="@color/black"
@@ -128,6 +133,7 @@
                         android:id="@+id/note_edt"
                         android:inputType="text"
                         android:autofillHints="name"
+                        android:background="@drawable/search_form_bg"
                         android:hint="@string/note_hint"
                         android:textColor="@color/black"
                         />
@@ -152,11 +158,11 @@
                         android:id="@+id/btnCancel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/yellow"
-                        android:backgroundTint="@color/yellow"
+                        android:background="@drawable/form_button_bg"
+                        android:backgroundTint="@color/pink"
                         android:text="@string/cancel"
                         android:textAppearance="?android:textAppearanceMedium"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
 
                 </RelativeLayout>
@@ -172,11 +178,11 @@
                         android:id="@+id/btnSave"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/yellow"
+                        android:background="@drawable/form_button_bg"
                         android:backgroundTint="@color/yellow"
                         android:text="@string/save"
                         android:textAppearance="?android:textAppearanceMedium"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
                 </RelativeLayout>
 

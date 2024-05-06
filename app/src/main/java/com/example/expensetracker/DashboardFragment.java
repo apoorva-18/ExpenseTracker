@@ -394,72 +394,72 @@ public class DashboardFragment extends Fragment {
     }
 
 
-        public void expenseDataInsert() {
-            AlertDialog.Builder mydialog = new AlertDialog.Builder(getActivity());
+    public void expenseDataInsert() {
+        AlertDialog.Builder mydialog = new AlertDialog.Builder(getActivity());
 
-            LayoutInflater inflater = LayoutInflater.from(getActivity());
+        LayoutInflater inflater = LayoutInflater.from(getActivity());
 
-            View myviewm = inflater.inflate(R.layout.custom_layout_for_insertdata, null);
-            mydialog.setView(myviewm);
-            final AlertDialog dialog = mydialog.create();
-            dialog.setCancelable(false);
+        View myviewm = inflater.inflate(R.layout.custom_layout_for_insertdata, null);
+        mydialog.setView(myviewm);
+        final AlertDialog dialog = mydialog.create();
+        dialog.setCancelable(false);
 
-            EditText edtAmount = myviewm.findViewById(R.id.amount_edt);
-            EditText edtType = myviewm.findViewById(R.id.type_edt);
-            EditText edtNote = myviewm.findViewById(R.id.note_edt);
+        EditText edtAmount = myviewm.findViewById(R.id.amount_edt);
+        EditText edtType = myviewm.findViewById(R.id.type_edt);
+        EditText edtNote = myviewm.findViewById(R.id.note_edt);
 
-            Button btnSave = myviewm.findViewById(R.id.btnSave);
-            Button btnCancel = myviewm.findViewById(R.id.btnCancel);
+        Button btnSave = myviewm.findViewById(R.id.btnSave);
+        Button btnCancel = myviewm.findViewById(R.id.btnCancel);
 
-            btnSave.setOnClickListener(v -> {
-                String type = edtType.getText().toString().trim();
-                String amount = edtAmount.getText().toString().trim();
-                String note = edtNote.getText().toString().trim();
+        btnSave.setOnClickListener(v -> {
+            String type = edtType.getText().toString().trim();
+            String amount = edtAmount.getText().toString().trim();
+            String note = edtNote.getText().toString().trim();
 
-                if (TextUtils.isEmpty(amount)) {
-                    edtAmount.setError("Required Field..");
-                    return;
-                }
-                int ouramountinte = Integer.parseInt(amount);
-                if (TextUtils.isEmpty(type)) {
-                    edtType.setError("Required Field..");
-                    return;
-                }
-                if (TextUtils.isEmpty(note)) {
-                    edtNote.setError("Required Field..");
-                    return;
-                }
-                if (mAuth.getCurrentUser() != null && balance != 0.0 && balance > 0.0) {
-                    String id = mExpenseDatabase.push().getKey();
-                    if (id != null) {
-                        String mDate = DateFormat.getDateInstance().format(new Date());
-                        Data data = new Data(ouramountinte, type, note, id, mDate);
+            if (TextUtils.isEmpty(amount)) {
+                edtAmount.setError("Required Field..");
+                return;
+            }
+            int ouramountinte = Integer.parseInt(amount);
+            if (TextUtils.isEmpty(type)) {
+                edtType.setError("Required Field..");
+                return;
+            }
+            if (TextUtils.isEmpty(note)) {
+                edtNote.setError("Required Field..");
+                return;
+            }
+            if (mAuth.getCurrentUser() != null && balance != 0.0 && balance > 0.0) {
+                String id = mExpenseDatabase.push().getKey();
+                if (id != null) {
+                    String mDate = DateFormat.getDateInstance().format(new Date());
+                    Data data = new Data(ouramountinte, type, note, id, mDate);
 
-                        mExpenseDatabase.child(id).setValue(data);
-                        Toast.makeText(getActivity(), "Data ADDED", Toast.LENGTH_SHORT).show();
-                    } else {
-                        // Handle the case where id is null
-                        Toast.makeText(getActivity(), "Failed to generate ID", Toast.LENGTH_SHORT).show();
-                    }
+                    mExpenseDatabase.child(id).setValue(data);
+                    Toast.makeText(getActivity(), "Data ADDED", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Handle the case where current user is null or balance conditions are not met
-                    Toast.makeText(getActivity(), "User not authenticated or invalid balance", Toast.LENGTH_SHORT).show();
+                    // Handle the case where id is null
+                    Toast.makeText(getActivity(), "Failed to generate ID", Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                // Handle the case where current user is null or balance conditions are not met
+                Toast.makeText(getActivity(), "User not authenticated or invalid balance", Toast.LENGTH_SHORT).show();
+            }
 
-                ftAnimation();
-                dialog.dismiss();
-            });
+            ftAnimation();
+            dialog.dismiss();
+        });
 
-            btnCancel.setOnClickListener(v -> {
-                ftAnimation();
-                dialog.dismiss();
-            });
+        btnCancel.setOnClickListener(v -> {
+            ftAnimation();
+            dialog.dismiss();
+        });
 
-            dialog.show();
-        }
+        dialog.show();
+    }
 
 
-            // For Income Data
+    // For Income Data
     public static class IncomeViewHolder extends RecyclerView.ViewHolder {
 
         View mIncomeView;
@@ -594,6 +594,8 @@ public class DashboardFragment extends Fragment {
 
                     a = a + 1;
                     a1 = a1 + 1;
+                } else {
+                    Log.e("getBarEntries", "DataSnapshot does not exist or is empty");
                 }
             }
         }

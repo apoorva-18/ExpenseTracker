@@ -8,6 +8,7 @@
     <item name="naView" type="id" />
     <item name="my_toolbar" type="id" />
     <item name="reset_password" type="id" />
+    <item name="spendee_logo" type="id"/>
 
     <item name="rating_bar" type="id" />
     <item name="rating_btn" type="id" />

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/income"
+    android:background="@drawable/background"
     tools:context=".IncomeFragment">
 
     <androidx.cardview.widget.CardView
@@ -24,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:background="@color/purple_200"
                 android:layout_width="wrap_content">
 
                 <TextView
@@ -39,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/yellow"
                 android:gravity="center">
 
                 <TextView

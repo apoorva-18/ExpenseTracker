@@ -25,6 +25,7 @@
         android:layout_height="672dp"
         android:layout_above="@+id/bottomNavigationbar"
         android:id="@+id/main_frame"
+        android:background="@drawable/background"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
