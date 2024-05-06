@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard">
 
+    </item>
+    <item android:id="@+id/income"
+        android:title="@string/income"
+        android:icon="@drawable/ic_income"
+        >
+
+    </item>
+    <item android:id="@+id/income_search"
+        android:title="@string/income_search"
+        android:icon="@drawable/search_income"
+        >
+
+    </item>
+    <item android:id="@+id/expense"
+        android:title="@string/expense"
+        android:icon="@drawable/ic_expense">
+    </item>
+    <item android:id="@+id/expense_search"
+        android:title="@string/expense_search"
+        android:icon="@drawable/search_expense"
+        >
+
+    </item>
 </menu>

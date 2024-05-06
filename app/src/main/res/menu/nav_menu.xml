@@ -1,4 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+    <item android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile">
+
+    </item>
+    <item android:id="@+id/dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard">
+
+    </item>
+    <item android:id="@+id/income"
+        android:title="@string/income"
+        android:icon="@drawable/ic_income">
+
+    </item>
+    <item android:id="@+id/search_income"
+        android:title="@string/income_search"
+        android:icon="@drawable/search_income">
+
+    </item>
+    <item android:id="@+id/expense"
+        android:title="@string/expense"
+        android:icon="@drawable/ic_expense">
+
+    </item>
+    <item android:id="@+id/search_expense"
+        android:title="@string/expense_search"
+        android:icon="@drawable/search_expense">
+
+    </item>
+    <item android:id="@+id/income_tax_emi"
+        android:title="@string/income_tax_and_emi"
+        android:icon="@drawable/ic_inc">
+
+    </item>
+    <item android:id="@+id/calculator"
+        android:title="@string/calc"
+        android:icon="@drawable/ic_calculator">
+
+    </item>
+    <item android:id="@+id/feedback"
+        android:title="@string/rate_us"
+        android:icon="@drawable/ic_star_rate">
+
+    </item>
+    <item android:id="@+id/about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_about">
+
+    </item>
+    <item android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout">
+
+    </item>
 </menu>

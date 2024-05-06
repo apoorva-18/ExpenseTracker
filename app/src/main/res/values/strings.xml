@@ -124,7 +124,7 @@
     <string name="total_gross">Total Gross</string>
     <string name="email">Email</string>
     <string name="register">Register</string>
-    <string name="create_pass">Create Password</string>
+    <string name="create_pass">******</string>
     <string name="already_have_acc_signin">Already have an account? Sign in here.</string>
     <string name="email_linked_to_acc">Enter email linked to your account</string>
     <string name="reset_link">Send Reset Link</string>
