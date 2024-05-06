@@ -70,8 +70,7 @@ public class searchdata extends AppCompatActivity {
 
     private void populateSearch(DataSnapshot snapshot) {
 
-        Log.d("IncomeData","Reading Data");
-        ArrayList<String> names=new ArrayList<>();
+        android.util.Log.d("IncomeData", "Reading Data");        ArrayList<String> names=new ArrayList<>();
 
         if(snapshot.exists()){
             for(DataSnapshot ds:snapshot.getChildren()){

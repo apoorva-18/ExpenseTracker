@@ -48,6 +48,7 @@ public class IncomeFragment extends Fragment {
     private String note;
     private int amount;
     private  String post_key;
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

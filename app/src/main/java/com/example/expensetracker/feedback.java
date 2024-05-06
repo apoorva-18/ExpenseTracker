@@ -47,7 +47,7 @@ public class feedback extends AppCompatActivity {
             hashMap.put("Rating", s1);
 
             if (ratingBar.getRating() != 0.0) {
-                mFeedbackDatabase.child("Feedback").updateChildren(hashMap)
+                mFeedbackDatabase.updateChildren(hashMap)
                         .addOnSuccessListener(o -> {
                             Toast.makeText(getApplicationContext(), "Thanks for Rating us..", Toast.LENGTH_SHORT).show();
                             ratingBar.setRating(0);

@@ -27,8 +27,7 @@ public class NextIncome extends AppCompatActivity {
         SA=i.getStringExtra("SA");
 
         go=findViewById(R.id.go);
-        go.setOnClickListener(view -> finish());
-
+        go.setOnClickListener(view -> NextIncome.this.finish());
 
     }
     public void finish(){

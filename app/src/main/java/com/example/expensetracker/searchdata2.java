@@ -68,8 +68,7 @@ public class searchdata2 extends AppCompatActivity {
 
     private void populateSearch(DataSnapshot snapshot) {
 
-        Log.d("ExpenseData","Reading Data");
-        ArrayList<String> names=new ArrayList<>();
+        android.util.Log.d("ExpenseData", "Reading Data");        ArrayList<String> names=new ArrayList<>();
 
         if(snapshot.exists()){
             for(DataSnapshot ds:snapshot.getChildren()){
