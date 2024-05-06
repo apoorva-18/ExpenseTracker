@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="add_income">Add Income</string>
+    <string name="income_search">Search Income</string>
+    <string name="expense_search">Search Expense</string>
+    <string name="total_expense">Total Expense: %d.00</string>
+    <string name="total_balance">Total Balance: %d.00</string>
+    <string name="total_income">Total Income: %d.00</string>
+    <string name="balance_result">Balance: %1$s.00</string>
+    <string name="total_expense_format">Total Expense: %s.00</string>
+    <string name="amount_format">-%1$s</string>
+    <string name="email_placeholder">Email not available</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="stand_deduction">Stand Deduction</string>
+    <string name="principal">Principal</string>
+    <string name="interest">Interest</string>
+    <string name="years">Years</string>
+    <string name="emi">EMI</string>
+    <string name="interest_total"> Interest Total</string>
+
+
+    <string name="total_tax">Total Tax: %1$d</string>
+    <string name="text_bs">Text for T1: %s</string>
+    <string name="text_calc_hra">Text for T2: %s</string>
+    <string name="text_sa">Text for T3: %s</string>
+    <string name="text_calc_lta">Text for T4: %s</string>
+    <string name="text_t5">Text for T5: %s</string>
+    <string name="income_total_sum">Total Income: %s</string>
+    <string name="about">About</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">My Profile</string>
+    <string name="user_email">User Email</string>
+    <string name="calc">Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="cont">Continue</string>
+    <string name="logout">LogOut</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="income_tax_and_emi">Income Tax and EMI</string>
+    <string name="enter_price">Enter the Price</string>
+    <string name="lta_description">Text 5</string>
+    <string name="change">Change</string>
+    <string name="new_pass">New Password</string>
+    <string name="old_pass">Old Password</string>
+    <string name="change_pass">Change Password</string>
+    <string name="section_80c">Section 80C</string>
+    <string name="section_80tta">Section 80TTA</string>
+    <string name="section_80d">Section 80D</string>
+    <string name="delete_acc_permanently">Delete Account Permanently</string>
+    <string name="register_user">Register User Logo</string>
+    <string name="amount1">AMOUNT:</string>
+    <string name="type1">Type</string>
+    <string name="type">TYPE:</string>
+    <string name="result">000.00</string>
+    <string name="result1">0000.00</string>
+    <string name="note1">NOTE:</string>
+    <string name="date1">04-05-2024</string>
+    <string name="description">Description</string>
+    <string name="balance">Balance</string>
+    <string name="income_history">Income History</string>
+    <string name="expense_history">Expense History</string>
+    <string name="expense_statistics">Expense Statistics</string>
+    <string name="save_money">Save Money</string>
+    <string name="live_better">Live Better</string>
+    <string name="welcome">Welcome,</string>
+    <string name="update">Update</string>
+    <string name="my_profile">My Profile</string>
+    <string name="search">Search</string>
+    <string name="type_hint">Enter Type</string>
+    <string name="version_name">Version %1$s</string>
+
+
+
+
+    <string name="income">Income</string>
+    <string name="amount">Amount</string>
+    <string name="expense">Expense</string>
+    <string name="note">Note</string>
+    <string name="category">Category</string>
+    <string name="category_hint"> Enter Category</string>
+    <string name="amount_hint">Enter Amount</string>
+    <string name="note_hint">EnterNote</string>
+    <string name="lta">LTA</string>
+    <string name="hra">HRA</string>
+    <string name="special_allowance">Special Allowance</string>
+    <string name="basic_salary">Basic Salary</string>
+    <string name="basic_pay">Basic Pay</string>
+    <string name="sa">SA</string>
+    <string name="standard_d">STANDARD D</string>
+    <string name="name1">Apoorva Singh</string>
+    <string name="name2">Shiv Pathak</string>
+
+    <string name="amount_type">INR</string>
+    <string name="date">date</string>
+    <string name="amt">100</string>
+    <string name="title">Save</string>
+    <string name="Delete">Delete</string>
+    <string name="note_hints">Enter note</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about_toolbar">about_toolbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="logo_design">Logo Design</string>
+    <string name="price">50000</string>
+    <string name="income_tax_calc">Income tax calculator</string>
+    <string name="total">Total</string>
+    <string name="standard_deduction">Standard Deduction</string>
+    <string name="go_back">Go Back</string>
+    <string name="back_to_main">Back To Main</string>
+    <string name="other_income">Other Income</string>
+    <string name="deductions">Deductions</string>
+    <string name="gross">Gross</string>
+    <string name="gross_taxable">Gross Taxable</string>
+    <string name="total_tax1">Total Tax</string>
+    <string name="total_payable_tax">Total payable tax</string>
+    <string name="total_gross">Total Gross</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="create_pass">Create Password</string>
+    <string name="already_have_acc_signin">Already have an account? Sign in here.</string>
+    <string name="email_linked_to_acc">Enter email linked to your account</string>
+    <string name="reset_link">Send Reset Link</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="pass">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="log_in">Log IN</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="sign_up_here">Don\'t have an account?Sign Up here.</string>
+    <string name="search_by_date">Search by date</string>
+
+
+    <string name="spendee1">Expens-E</string>
+    <string name="expense_tracker_and_budget_manager">Expense Tracker and Budget Manager</string>
+    <string name="income_tax_and_emi_calc">IncomeTax and EMI Calculator</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_feedback">feedback</string>
+    <string name="rate_app">Rate this App</string>
+    <string name="submit">Submit</string>
+    <string name="edit4_hint">Enter Numeric Value</string>
+    <string name="edit2_hint">Enter Numeric Value</string>
+    <string name="edit3_hint">Enter Numeric Value</string>
+
+
+
+</resources>
