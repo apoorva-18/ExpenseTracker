@@ -46,6 +46,7 @@ public class home_screen extends AppCompatActivity {
         {
             Intent intent=new Intent(home_screen.this,first_home_page.class);
             startActivity(intent);
+            finish();
 
         }
 
@@ -81,12 +82,14 @@ public class home_screen extends AppCompatActivity {
 
             mProgressBar.setVisibility(View.VISIBLE);
 
+
             mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(task -> {
-                mProgressBar.setVisibility(View.GONE);
+
                 if (task.isSuccessful()) {
                     checkEmailVerification();
                 } else {
                     Toast.makeText(getApplicationContext(), "Login Failed..", Toast.LENGTH_SHORT).show();
+                    mProgressBar.setVisibility(View.GONE);
                 }
             });
         });

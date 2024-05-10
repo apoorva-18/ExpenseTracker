@@ -131,7 +131,7 @@
     <string name="reset_pass">Reset Password</string>
     <string name="pass">Password</string>
     <string name="remember_me">Remember Me</string>
-    <string name="log_in">Log IN</string>
+    <string name="log_in">Log In</string>
     <string name="forgot_pass">Forgot Password?</string>
     <string name="sign_up_here">Don\'t have an account?Sign Up here.</string>
     <string name="search_by_date">Search by date</string>

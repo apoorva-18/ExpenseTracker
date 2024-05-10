@@ -1,7 +1,6 @@
 package com.example.expensetracker;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -41,6 +40,7 @@ public class Registration extends AppCompatActivity {
         mSignin.setOnClickListener(v -> {
             Intent intent = new Intent(Registration.this, home_screen.class);
             startActivity(intent);
+            finish();
         });
 
 

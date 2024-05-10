@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.pm.ResolveInfo;
@@ -54,7 +53,7 @@ public class first_home_page extends AppCompatActivity implements NavigationView
         setSupportActionBar(toolbar);
 
         bottomNavigationView=findViewById(R.id.bottomNavigationbar);
-        FrameLayout frameLayout=findViewById(R.id.main_frame);
+
         DrawerLayout drawerLayout=findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(
                 this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close

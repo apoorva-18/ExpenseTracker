@@ -6,20 +6,20 @@
     app:startDestination="@id/FirstFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.expensetracker.FirstFragment"
+        android:id="@+id/FirstFragment1"
+        android:name="com.example.expensetracker.IncomeFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_income">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.expensetracker.SecondFragment"
+        android:id="@+id/SecondFragment1"
+        android:name="com.example.expensetracker.ExpenseFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_expense">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
@@ -27,9 +27,9 @@
     </fragment>
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.expensetracker.FirstFragment"
+        android:name="com.example.expensetracker.IncomeFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_income">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -37,9 +37,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.expensetracker.SecondFragment"
+        android:name="com.example.expensetracker.ExpenseFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_expense">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
