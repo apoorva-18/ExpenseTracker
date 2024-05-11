@@ -2,9 +2,7 @@ package com.example.expensetracker;
 
 
 import android.app.AlertDialog;
-
 import android.graphics.Color;
-
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -17,27 +15,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.expensetracker.Model.Data;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-
 import com.github.mikephil.charting.charts.BarChart;
-
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
-
 import com.github.mikephil.charting.utils.ColorTemplate;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -46,7 +37,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -59,12 +49,9 @@ public class DashboardFragment extends Fragment {
     BarDataSet barDataSet;
     ArrayList<BarEntry> barEntries = new ArrayList<>();
     final String[] date = new String[10000000];
-
     private FloatingActionButton fab_main;
     private FloatingActionButton fab_income_btn;
     private FloatingActionButton fab_expense_btn;
-
-
     private TextView fab_income_txt;
     private TextView fab_expense_txt;
 
@@ -120,9 +107,7 @@ public class DashboardFragment extends Fragment {
         totalIncomeResult = myview.findViewById(R.id.income_set_result);
         totalExpenseResult = myview.findViewById(R.id.expense_set_result);
         totalBalanceResult = myview.findViewById(R.id.balance_set_result);
-
         //Recycler
-
         mRecyclerIncome = myview.findViewById(R.id.recycler_income);
         mRecyclerExpense = myview.findViewById(R.id.recycler_expense);
 
@@ -151,15 +136,12 @@ public class DashboardFragment extends Fragment {
                 barChart.notifyDataSetChanged();
                 barChart.invalidate();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         };
         mExpenseDatabase.addListenerForSingleValueEvent(event2);
-
-
         fab_main.setOnClickListener(v -> {
             addData();
 

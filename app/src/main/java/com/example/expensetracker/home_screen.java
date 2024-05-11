@@ -101,9 +101,9 @@ public class home_screen extends AppCompatActivity {
         if (firebaseUser != null) {
             boolean emailVerified = firebaseUser.isEmailVerified();
             if (emailVerified) {
-                finish();
                 Toast.makeText(getApplicationContext(), "Login Successful..", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(home_screen.this, first_home_page.class)); // Assuming FirstHomePage is the correct activity
+                startActivity(new Intent(home_screen.this, first_home_page.class));
+                finish();// Assuming FirstHomePage is the correct activity
             } else {
                 Toast.makeText(this, "Please verify your email..", Toast.LENGTH_LONG).show();
                 mAuth.signOut();

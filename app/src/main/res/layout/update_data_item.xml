@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical">
 
             <LinearLayout
@@ -147,11 +148,11 @@
                         android:id="@+id/btnuPD_Delete"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/yellow"
+                        android:background="@drawable/form_button_bg"
                         android:backgroundTint="@color/yellow"
                         android:text="@string/Delete"
                         android:textAppearance="?android:textAppearanceMedium"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
 
                 </RelativeLayout>
@@ -167,11 +168,11 @@
                         android:id="@+id/btn_upd_Update"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/yellow"
+                        android:background="@drawable/form_button_bg"
                         android:backgroundTint="@color/yellow"
                         android:text="@string/update"
                         android:textAppearance="?android:textAppearanceMedium"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
                 </RelativeLayout>
 

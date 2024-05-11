@@ -26,7 +26,7 @@
                 android:layout_width="552dp"
                 android:layout_height="287dp"
                 android:layout_marginTop="-10dp"
-                android:src="@drawable/yellowdesign"
+                android:src="@drawable/background"
                 android:contentDescription="@string/logo_design"/>
 
             <ImageView

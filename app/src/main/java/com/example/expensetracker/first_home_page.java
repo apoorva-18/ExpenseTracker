@@ -50,9 +50,9 @@ public class first_home_page extends AppCompatActivity implements NavigationView
         toolbar.setTitle("Expens-E");
         toolbar.setTitleTextColor(Color.BLACK);
 
-        setSupportActionBar(toolbar);
-
         bottomNavigationView=findViewById(R.id.bottomNavigationbar);
+        setSupportActionBar(null);
+
 
         DrawerLayout drawerLayout=findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(
@@ -241,8 +241,6 @@ public class first_home_page extends AppCompatActivity implements NavigationView
                 builder.setNegativeButton("NO", (dialog, which) -> dialog.dismiss());
                 builder.show();
             }
-
-
 
         if(fragment!=null){
             FragmentTransaction ft=getSupportFragmentManager().beginTransaction();

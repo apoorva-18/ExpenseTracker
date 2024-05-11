@@ -92,8 +92,8 @@ public class Registration extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(Registration.this, "Registration Successful. Verification mail sent successfully..", Toast.LENGTH_LONG).show();
                     mAuth.signOut();
-                    finish();
                     startActivity(new Intent(Registration.this, home_screen.class));
+                    finish();
                 } else {
                     Toast.makeText(Registration.this, "Error occurred sending verification mail..", Toast.LENGTH_LONG).show();
                 }
